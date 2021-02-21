@@ -15,8 +15,13 @@ class MyspiderItem(scrapy.Item):
     time = scrapy.Field()   #时间范围
     file_type = scrapy.Field()    #数据数量
     data_format = scrapy.Field()    #数据格式
-    trade = scrapy.Field()  #交易量
+
     browse = scrapy.Field() #浏览量
     evaluation = scrapy.Field() #评价
     price = scrapy.Field()  #价格
+
+    trade = scrapy.Field()  # 交易量
+    trade_year = scrapy.Field()
+    trade_mouth = scrapy.Field()
+    trade_week = scrapy.Field()
     pass
